@@ -125,6 +125,8 @@ $ cd ./SimAI/
 
 # Clone submodules
 $ git submodule update --init --recursive
+# Switch to master branch for each submodule
+$ git submodule foreach --recursive 'git checkout master'
 # Make sure use the newest commit
 $ git submodule update --remote
 
